@@ -11,7 +11,7 @@ body {
 
 /*login*/
 
-.main-login{
+.main-form{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -24,7 +24,7 @@ h1 {
     padding: 1em;
 }
 
-.article-login {
+.article-form {
     background: #a29e9e;
     border-radius: 1em;
     padding-left: 7em;
@@ -50,7 +50,7 @@ label {
     font-size: 1em;
 }
 
-input, .button-login {
+input, .imput-login {
     width: 100%;
     padding: 2em;
     margin-bottom: 3em;
@@ -61,14 +61,14 @@ input, .button-login {
     justify-content: center;
 }
 
-.button-login, .button-index {
+.imput-login, .button-index {
     background: #007bff;
     color: #fff;
     border: none;
     font-size: 1em;
 }
 
-.button-login:hover, .button-index:hover {
+.imput-login:hover, .button-index:hover {
     background: #0056b3;
 }
 
@@ -92,6 +92,5 @@ input, .button-login {
     font-size: 2em;
     border: none;
 }
-
 
 

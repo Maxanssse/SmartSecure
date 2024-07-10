@@ -5,23 +5,43 @@ require_once './includes/functions.php';
 reconnect_auto();
 is_connect();
 
+
 require_once './includes/header.php';
 ?>
 
-<h1>SmartSecure</h1>
+<?php if (isset($_SESSION['auth'])) : ?>
+        <a href="logout.php">Se deconnecter</a>
+    <?php else : ?>
+        <a href="login.php">Se connecter</a>
+    <?php endif; ?>
+
+<?php
+    if (!isset($_SESSION['button'])) {
+    $_SESSION['button'] = "Vérouiller";
+}
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if ($_SESSION['button'] === "Vérouiller") {
+        $_SESSION['button'] = "Déverouiller";
+    } else {
+        $_SESSION['button'] = "Vérouiller";
+    }
+}
+
+?>
 
 <h2>Bonjour <?= $_SESSION['auth']->username ?></h2>
 
     <main class='main'>
         <article class='article'>  
-            <button class='button-index' onclick="Vérouiller()">Vérouiller</button>
+            <form method="post">
+                <button class='button-index' type="submit"><?php echo $_SESSION['button']; ?></button>
+            </from>
         </article>
     </main>
-    <script>
-        function Vérouiller() {
-            alert('Arduino en attente !');
-        }
-    </script>
+
+
 
 <?php
 require_once './includes/footer.php';
