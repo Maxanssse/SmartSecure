@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartSecure - Produit</title>
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         .medium-gif {
+            width: 800px;
+            height: 600px;
+         }
+         .header-link, .footer-link {
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        .header-link:hover, .footer-link:hover {
+            color: #2bcaf1; /* Couleur lumineuse (or) */
+            text-shadow: 0 0 8px #2bcaf1;
+        }
+        /* Styles pour les icônes de réseaux sociaux */
+ .social-icons a {
+            color: white;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #2bcaf1;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="style.html" class="flex items-center">
+                <img src="icone.png" alt="Connected Lock Icon" class="w-8 h-8 mr-2">
+                <span class="text-2xl font-bold">SmartSecure</span>
+                </a>
+            <nav>
+                <a href="style.html" class="header-link mx-2">Accueil</a>
+                <a href="product.html" class="header-link mx-2">Produit</a>
+                <a href="contact.html" class="header-link mx-2">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Overview Section -->
+    <section class="product-overview py-20 bg-white text-center">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Découvrez notre verrou connecté</h2>
+            <p class="max-w-2xl mx-auto mb-8">Notre verrou connecté offre une solution innovante pour sécuriser vos trottinettes et vélos  en ville. Avec une installation facile et robuste  et une connectivité optimale, protégez vos biens en toute tranquillité.</p>
+            <img src="TPPX.gif" alt="Verrou Connecté" class="medium-gif mx-auto mb-4">
+        </div>
+        <div class="container2 mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Localisez en temps réel nos verrou</h2>
+            <p class="max-w-2xl mx-auto mb-8">Grace a notre application wab , localisez en temp reel tous nos verous, ayez un visuel sur leur dispobinibilités et usez en tres facilement  !</p>
+            <img src="dynamic-google-maps-marker-with-acf.gif" alt="Verrou Connecté" class="medium-gif mx-auto mb-4">
+        </div>
+    </section>
+
+    <!-- Detailed Features Section -->
+    <section class="detailed-features py-20 bg-gray-100 text-center">
+        <div class="container mx-auto">
+            <h3 class="text-2xl font-bold mb-8">Fonctionnalités en Détail</h3>
+            <div class="flex justify-around">
+                <div class="feature-item p-4">
+                    <h4 class="text-xl font-semibold">Connectivité Bluetooth et Wi-fi</h4>
+                    <p class="mt-2">Connectez-vous à votre verrou via Bluetooth ou wi-fi pour une gestion facile et optimale.</p>
+                </div>
+                <div class="feature-item p-4">
+                    <h4 class="text-xl font-semibold">Résistance aux Intempéries</h4>
+                    <p class="mt-2">Conçu pour résister à toutes les conditions météorologiques et aus tentatives de vol grace a sa conception en fibre de carbonne renforcer au titane .</p>
+                </div>
+                <div class="feature-item p-4">
+                    <h4 class="text-xl font-semibold">Suivi en Temps Réel</h4>
+                    <p class="mt-2">Retrouver la localisation de nos verou disponible , mais egalement celui que vous avez reservé ! gerrer sa gestion via notre application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Video Section -->
+    <section class="demo-video py-20 bg-white text-center">
+        <div class="container mx-auto">
+            <h3 class="text-2xl font-bold mb-8">Découvrez le Produit en Action</h3>
+           
+            <video controls class="mx-auto mb-4">
+                <source src="pincebleu.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta py-20 bg-gray-800 text-white text-center">
+        <div class="container mx-auto">
+            <h3 class="text-2xl font-bold mb-8">Prêt à Protéger Vos Trottinettes ?</h3>
+            <a href="contact.html" class="bg-white text-blue-500 py-2 px-4 rounded">Louer Maintenant</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2024 SmartSecure. Tous droits réservés.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/SmartSecure" class="footer-link mx-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/SmartSecure" class="footer-link mx-2" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/smartsecure" class="footer-link mx-2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
